@@ -76,6 +76,21 @@ const sections = [
                     <li>Consistently received excellent feedback from students</li>
                 </ul>,
             },
+            {
+                position: 'Software Developer (Co-op)',
+                organization: 'Viral Bioinformatics Resource Center, Department of Biochemistry & Microbiology, University of Victoria',
+                city: 'Edmonton AB',
+                fromDate: '2018-09-01',
+                body: <ul>
+                    <li>Developed, deployed, and maintained Java-based bioinformatics tools</li>
+                    <li>Initiated several security and workflow improvements</li>
+                    <li>Headed rebuild of EC2 instance after attack</li>
+                    <li>Managed AWS EC2 instances</li>
+                    <li>Worked in teams on projects</li>
+                    <li>Initiated, defined requirements for ReactJS-based pilot project</li>
+                    <li>Maintained WordPress website</li>
+                </ul>,
+            },
         ],
     },
     {
@@ -101,34 +116,32 @@ const sections = [
             <li>
                 Relevant Languages
                 <ul>
+                    <li>JavaScript</li>
+                    <li>C</li>
                     <li>Python</li>
-                    <li>MySQL</li>
-                    <li>MATLAB</li>
-                    <li>R</li>
+                    <li>SQL</li>
                 </ul>
             </li>
 
             <li>
-                Other Languages
+                Other Languages / Frameworks
                 <ul>
                     <li>Java</li>
-                    <li>C</li>
-                    <li>JavaScript</li>
                     <li>PHP</li>
                     <li>HTML5/CSS3</li>
-                    <li>JavaScript</li>
+                    <li>ReactJS</li>
                 </ul>
             </li>
 
             <li>
                 Software/Dev Tools
                 <ul>
-                    <li>Git/Github</li>
+                    <li>Git/GitHub/Bitbucket</li>
                     <li>Docker</li>
+                    <li>AWS</li>
                     <li>Visual Studio Code</li>
                     <li>Slack</li>
                     <li>Adobe CS</li>
-                    <li>Microsoft Office</li>
                 </ul>
             </li>
 
@@ -146,8 +159,8 @@ const sections = [
         name: 'Transferable Core Competencies',
         type: 'simple',
         body: <ul>
-            <li>Problem Solver</li>
-            <li>Critical Mind</li>
+            <li>Problem Solving</li>
+            <li>Critical Thinking</li>
             <li>Attention to Detail</li>
             <li>Organized</li>
         </ul>
