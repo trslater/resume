@@ -3,25 +3,13 @@ import './App.css';
 import { contact, sections } from 'data/content'
 import { slugify, formatDate } from 'logic/util'
 
+import ResumeHeader from 'components/ResumeHeader'
+
 const App = () => {
   const { name, phone, email, github, address } = contact
 
   return <article id={'resume'} className={'grid'}>
-    <header>
-      <div id={'me'}>
-        <h1>Tristan Slater</h1>
-      </div>
-
-      <ul id={'contact'}>
-        <li><a href={`tel:${phone.replace(/\s/g, '')}`}>{phone}</a>
-
-        </li><li><a href={`mailto:${name} <${email}>`} target={'_blank'}>{email}</a></li>
-
-        <li><a href={`https://${github}`}>{github}</a></li>
-      </ul>
-
-      <div id={'address'}>{address}</div>
-    </header>
+    <ResumeHeader {...{ name, phone, email, github, address }} />
 
     {sections.map(section => {
       const slug = slugify(section.name)
