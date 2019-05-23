@@ -6,7 +6,7 @@ const ResumeSection = ({ name, children }) => {
   const slug = slugify(name)
 
   return (
-    <section key={slug} id={slug}>
+    <section id={slug}>
       <h2>{name}</h2>
       {children}
     </section>
