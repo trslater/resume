@@ -1,0 +1,105 @@
+[contact]
+name = "Tristan Slater"
+phone = "+1 778 922 3004"
+email = "hello@trslater.ca"
+website = "https://trslater.ca"
+address = [
+    "5-526 Harbinger Ave",
+    "Victoria BC  V8V 4J1",
+]
+
+[[social]]
+network = "GitHub"
+icon = "github"
+username = "trslater"
+url = "https://github.com/trslater"
+
+[[social]]
+network = "LinkedIn"
+icon = "linkedin"
+username = "tristanslater"
+url = "https://www.linkedin.com/in/tristanslater"
+
+[[education]]
+name = "Bachelor of Software Engineering (BSEng)"
+school = "University of Vectoria"
+city = "Victoria BC"
+start_date = 2016-09-07
+ended = true
+end_date = 2023-04-06
+
+[[experience]]
+position = "Front End Developer (Co-op)"
+organization = "SunTracker Technologies Inc."
+city = "Victoria BC"
+start_date = 2019-09-01
+ended = true
+end_date = 2020-12-01
+highlights = []
+
+[[experience]]
+position = "Software Developer (Co-op)"
+organization = "Viral Bioinformatics Resource Center, Department of Biochemistry & Microbiology, University of Victoria"
+city = "Victoria BC"
+start_date = 2018-09-01
+ended = true
+end_date = 2019-08-01
+highlights = [
+    "Developed, deployed, and maintained Java-based bioinformatics tools",
+    "Initiated several security and workflow improvements",
+    "Headed rebuild of EC2 instance after attack",
+    "Managed AWS EC2 instances",
+    "Worked in teams on projects",
+    "Initiated, defined requirements for ReactJS-based pilot project",
+    "Maintained WordPress website",
+]
+
+[[experience]]
+position = "Freelance Web Developer"
+organization = "Self Employed"
+city = "Edmonton AB / Victoria BC"
+start_date = 2008-05-01
+ended = true
+end_date = 2016-09-01
+highlights = [
+    "Created websites for a wide variety of clients from realtors to storytellers",
+    "Managed client project life-cycle from conception to maintenance",
+    "Constantly developed and improved development process/toolchain",
+    "Learned PHP, JavaScript, and MySQL to create custom interactive content",
+    "Kept ended with relevant web technologies, frameworks, such as HTML5/CSS3 and WordPress",
+]
+
+[[experience]]
+position = "Contract Instructor"
+organization = "University of Alberta's Technology Training Centre"
+city = "Edmonton AB"
+start_date = 2011-10-01
+ended = true
+end_date = 2013-09-01
+highlights = [
+    "Developed and taught courses in web development",
+    "Taught cources in Microsoft Office and Creative Suite",
+    "Consistently received excellent feedback from students",
+]
+
+[[experience]]
+position = "Contract Designer"
+organization = "PureSafety Inc. (now part of UL)"
+city = "Edmonton AB"
+start_date = 2006-09-01
+ended = true
+end_date = 2008-01-01
+highlights = ["Continued to expanded ActionScript ability"]
+
+[[experience]]
+position = "Full-Time Creative Designer"
+organization = "PureSafety Inc. (now part of UL)"
+city = "West Kelowna BC"
+start_date = 2004-08-01
+ended = true
+end_date = 2006-03-01
+highlights = [
+    "Embraced chance for learning and development",
+    "Learned ActionScript to contribute to interactive learning activities",
+    "Used scripts to automate production",
+]

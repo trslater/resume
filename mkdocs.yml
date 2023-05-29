@@ -1,0 +1,8 @@
+site_name: Tristan Slater
+
+theme:
+  name: null
+  custom_dir: theme/
+
+hooks:
+  - hooks.py
