@@ -3,10 +3,9 @@ name = "Tristan Slater"
 phone = "+1 778 922 3004"
 email = "hello@trslater.ca"
 website = "https://trslater.ca"
-address = [
-    "5-526 Harbinger Ave",
-    "Victoria BC  V8V 4J1",
-]
+
+[profile]
+text = "I am a software engineering graduate from the University of Victoria with more than 12 years of experience in the tech industry, working on projects for large companies such as Coca-Cola and eBay, teaching technology classes at the University of Alberta, and running my own freelance web development business."
 
 [[social]]
 network = "GitHub"
@@ -21,12 +20,17 @@ username = "tristanslater"
 url = "https://www.linkedin.com/in/tristanslater"
 
 [[education]]
-name = "Bachelor of Software Engineering (BSEng)"
+title = "Bachelor of Software Engineering (BSEng)"
 school = "University of Vectoria"
 city = "Victoria BC"
 start_date = 2016-09-07
 ended = true
 end_date = 2023-04-06
+highlights = [
+    "Cumulative GPA: 7.65 (~3.8)",
+    "ML specialization",
+    "Graphics specialization",
+]
 
 [[experience]]
 position = "Front End Developer (Co-op)"
@@ -35,7 +39,11 @@ city = "Victoria BC"
 start_date = 2019-09-01
 ended = true
 end_date = 2020-12-01
-highlights = []
+highlights = [
+    "Headed rebuild of greenhouse designer web app GUI",
+    "Headed rebuild of greenhouse designer app server in Python Django",
+    "Developed a Python interface for proprietary C++ library",
+]
 
 [[experience]]
 position = "Software Developer (Co-op)"
@@ -83,23 +91,60 @@ highlights = [
 ]
 
 [[experience]]
-position = "Contract Designer"
-organization = "PureSafety Inc. (now part of UL)"
-city = "Edmonton AB"
-start_date = 2006-09-01
-ended = true
-end_date = 2008-01-01
-highlights = ["Continued to expanded ActionScript ability"]
-
-[[experience]]
-position = "Full-Time Creative Designer"
+position = "Creative Designer"
 organization = "PureSafety Inc. (now part of UL)"
 city = "West Kelowna BC"
 start_date = 2004-08-01
 ended = true
-end_date = 2006-03-01
+end_date = 2008-03-01
 highlights = [
     "Embraced chance for learning and development",
     "Learned ActionScript to contribute to interactive learning activities",
     "Used scripts to automate production",
+    "Worked with big names such as Coca-Cola and eBay",
+]
+
+[[sections]]
+title = "Technical Competencies"
+
+[[sections.subsections]]
+heading = "Fluent"
+highlights = [
+    "Python",
+    "JavaScript",
+    "HTML/CSS",
+]
+
+[[sections.subsections]]
+heading = "Competent"
+highlights = [
+    "C",
+    "Java",
+]
+
+[[sections.subsections]]
+heading = "Dev Tools"
+highlights = [
+    "Git/GitHub",
+    "Docker",
+    "AWS",
+    "Visual Studio Code",
+]
+
+[[sections.subsections]]
+heading = "UNIX"
+highlights = [
+    "Filesystem",
+    "CLI tools",
+    "Bash",
+]
+
+[[sections]]
+title = "Core Competencies"
+
+[[sections]]
+title = "Hobbies & Interests"
+highlights = [
+    "Guitar",
+    "Hiking"
 ]
