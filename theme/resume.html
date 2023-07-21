@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block main %}
+<section id="profile">
+    <p>{{ profile.text }}</p>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <ol class="timeline">
+        {% for program in education|sort(attribute='start_date') %}
+        <li class="entry">
+            <div class="main">
+                <h3>{{ program.title }}</h3>
+                <div class="school">{{ program.school }}</div>
+                <ul class="highlights">
+                    {% for highlight in program.highlights %}
+                    <li>{{ highlight }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="details">
+                {{ program.start_date|date('%b %Y') }}–{{ program.end_date|date('%b %Y') if program.ended else 'present' }}<br>
+                {{ program.city }}
+            </div>
+        </li>
+        {% endfor %}
+    </ol>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <ol class="timeline">
+        {% for job in experience|sort(reverse=True, attribute='start_date') %}
+        <li class="entry">
+            <div class="main">
+                <h3>{{ job.position }}</h3>
+                <div class="organization">{{ job.organization }}</div>
+                <ul class="highlights">
+                    {% for highlight in job.highlights %}
+                    <li>{{ highlight }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="details">
+                {{ job.start_date|date('%b %Y') }}–{{ job.end_date|date('%b %Y') if job.ended else 'present' }}<br>
+                {{ job.city }}
+            </div>
+        </li>
+        {% endfor %}
+    </ol>
+</section>
+
+{% for section in sections %}
+<section class="other">
+    <h2>{{ section.title }}</h2>
+    {% if section.subsections %}
+    <ul class="subsections">
+        {% for subsection in section.subsections %}
+        <li>
+            <h3>{{ subsection.heading }}</h3>
+            <ul class="highlights">
+                {% for highlight in subsection.highlights %}
+                <li>{{ highlight }}</li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <ul class="highlights">
+        {% for highlight in section.highlights %}
+        <li>{{ highlight }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</section>
+{% endfor %}
+
+{% if references %}
+<section id="references">
+    <h2>References</h2>
+    <ul>
+        {% for reference in references %}
+        <li>
+            <h3>{{ reference.name }}</h3>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
+{% endblock %}

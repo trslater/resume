@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{{ contact.name }}—{{ page.title }}</title>
+
+    <!-- Line Awesome Icon Font -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Abel & Lato Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lato&display=swap" rel="stylesheet">
+
+    <!-- Main Theme Styles -->
+    <link rel="stylesheet" href="{{ 'css/theme.css'|url }}">
+
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1>{{ contact.name }}</h1>
+                <div id="tagline">Software Engineer</div>
+            </div>
+        
+            <address id="contact">
+                <ul>
+                    <li id="phone">
+                        <i class="la la-phone"></i>
+                        <a href="tel:{{ contact.phone }}">{{ contact.phone }}</a>
+                    </li>
+                    
+                    <li id="email">
+                        <i class="la la-envelope"></i>
+                        <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+                    </li>
+                    
+                    {% if contact.address %}
+                    <li id="stree-address">
+                        {{ contact.address|join('<br>') }}
+                    </li>
+                    {% endif %}
+                    
+                    {% for profile in social %}
+                    <li class="social-network"><a href="{{ profile.url }}"><i class="la la-{{ profile.icon }}"></i> {{ profile.username }}</a></li>
+                    {% endfor %}
+                </ul>
+            </address>
+        </header>
+
+        <main role="main">
+            {% block main %}{% endblock %}
+        </main>
+    </div>
+</body>
+</html>
