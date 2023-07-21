@@ -4,5 +4,9 @@ theme:
   name: null
   custom_dir: theme/
 
+watch:
+  - data
+  - theme
+
 hooks:
   - hooks.py
