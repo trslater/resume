@@ -18,7 +18,7 @@ def date_formatted(date, format):
 @APP.route("/")
 @APP.route("/<doc>")
 def main(doc="resume"):
-    title = doc.replace("-", " ").upper()
+    title = doc.replace("-", " ").title()
 
     default_data_abs_path = PROJECT_PATH/DEFAULT_DATA_REL_PATH
     data_abspath = Path(os.environ.get("RESUME_DATA", default_data_abs_path))
