@@ -12,16 +12,20 @@ APP = Flask(__name__)
 
 @APP.template_filter("date")
 def date_formatted(date, format):
-  return date.strftime(format)
+    return date.strftime(format)
 
 
 @APP.route("/")
 @APP.route("/<doc>")
 def main(doc="resume"):
-    default_data_abs_path = PROJECT_PATH/DEFAULT_DATA_REL_PATH
-    data_abspath = Path(os.environ.get("RESUME_DATA", default_data_abs_path))
+    title = doc.replace("-", " ").upper()
+    data = {}
 
-    with data_abspath.open("br") as toml_file:
-        data = tomllib.load(toml_file)
+    if doc == "resume":
+        default_data_abs_path = PROJECT_PATH/DEFAULT_DATA_REL_PATH
+        data_abspath = Path(os.environ.get("RESUME_DATA", default_data_abs_path))
+
+        with data_abspath.open("br") as toml_file:
+            data = tomllib.load(toml_file)
         
-    return render_template(f"{doc}.html", title="Resume", **data)
+    return render_template(f"{doc}.html", title=title, **data)
