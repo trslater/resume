@@ -64,7 +64,7 @@ p, ol, ul {
     margin-block: 1rem;
 }
 
-header {
+#letterhead {
     /* Flexbox */
     display: flex;
     justify-content: space-between;

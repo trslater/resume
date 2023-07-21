@@ -1,0 +1,30 @@
+<header id="letterhead">
+    <div class="title">
+        <h1>{{ contact.name }}</h1>
+        <div id="tagline">Software Engineer</div>
+    </div>
+
+    <address id="contact">
+        <ul>
+            <li id="phone">
+                <i class="la la-phone"></i>
+                <a href="tel:{{ contact.phone }}">{{ contact.phone }}</a>
+            </li>
+            
+            <li id="email">
+                <i class="la la-envelope"></i>
+                <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+            </li>
+            
+            {% if contact.address %}
+            <li id="stree-address">
+                {{ contact.address|join('<br>') }}
+            </li>
+            {% endif %}
+            
+            {% for profile in social %}
+            <li class="social-network"><a href="{{ profile.url }}"><i class="la la-{{ profile.icon }}"></i> {{ profile.username }}</a></li>
+            {% endfor %}
+        </ul>
+    </address>
+</header>
