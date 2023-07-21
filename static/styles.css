@@ -8,7 +8,12 @@
     --small: 0.8rem;
     --thin: 0.1rem;
     --hairline: 0.07rem;
+    
     font-size: 12pt;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -66,7 +71,7 @@ header {
     align-items: center;
 
     /* Box model */
-    height: 5rem;
+    height: 7rem;
     padding-bottom: 1rem;
     border-bottom: var(--thin) solid black;
 }
@@ -149,7 +154,7 @@ header {
     font-size: var(--small);
     text-align: right;
 
-    width: 9rem;
+    width: 10rem;
     padding-right: 1rem;
 
     position: absolute;
