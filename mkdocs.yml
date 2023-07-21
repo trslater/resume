@@ -10,3 +10,6 @@ watch:
 
 hooks:
   - hooks.py
+
+markdown_extensions:
+  - meta
