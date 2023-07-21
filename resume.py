@@ -19,13 +19,11 @@ def date_formatted(date, format):
 @APP.route("/<doc>")
 def main(doc="resume"):
     title = doc.replace("-", " ").upper()
-    data = {}
 
-    if doc == "resume":
-        default_data_abs_path = PROJECT_PATH/DEFAULT_DATA_REL_PATH
-        data_abspath = Path(os.environ.get("RESUME_DATA", default_data_abs_path))
+    default_data_abs_path = PROJECT_PATH/DEFAULT_DATA_REL_PATH
+    data_abspath = Path(os.environ.get("RESUME_DATA", default_data_abs_path))
 
-        with data_abspath.open("br") as toml_file:
-            data = tomllib.load(toml_file)
+    with data_abspath.open("br") as toml_file:
+        data = tomllib.load(toml_file)
         
     return render_template(f"{doc}.html", title=title, **data)
