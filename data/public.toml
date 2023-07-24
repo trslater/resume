@@ -33,7 +33,7 @@ highlights = [
 ]
 
 [[experience]]
-position = "Front End Developer (Co-op)"
+position = "Front End Developer (Co-Op)"
 organization = "SunTracker Technologies Inc."
 city = "Victoria BC"
 start_date = 2019-09-01
@@ -42,11 +42,12 @@ end_date = 2020-12-01
 highlights = [
     "Headed rebuild of greenhouse designer web app GUI",
     "Headed rebuild of greenhouse designer app server in Python Django",
+    "Developed, deployed, and managed an NGINX web server",
     "Developed a Python interface for proprietary C++ library",
 ]
 
 [[experience]]
-position = "Software Developer (Co-op)"
+position = "Software Developer (Co-Op)"
 organization = "Viral Bioinformatics Resource Center, Department of Biochemistry & Microbiology, University of Victoria"
 city = "Victoria BC"
 start_date = 2018-09-01
@@ -57,7 +58,6 @@ highlights = [
     "Initiated several security and workflow improvements",
     "Headed rebuild of EC2 instance after attack",
     "Managed AWS EC2 instances",
-    "Worked in teams on projects",
     "Initiated, defined requirements for ReactJS-based pilot project",
     "Maintained WordPress website",
 ]
@@ -108,18 +108,22 @@ highlights = [
 title = "Technical Competencies"
 
 [[sections.subsections]]
-heading = "Fluent"
+heading = "Languages"
 highlights = [
     "Python",
     "JavaScript",
     "HTML/CSS",
+    "C/C++",
+    "Java",
 ]
 
 [[sections.subsections]]
-heading = "Competent"
+heading = "Libraries"
 highlights = [
-    "C",
-    "Java",
+    "FastAPI",
+    "Django",
+    "MkDocs",
+    "React",
 ]
 
 [[sections.subsections]]
