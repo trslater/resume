@@ -21,7 +21,7 @@
             </div>
 
             <div class="details">
-                {{ program.start_date|date('%b %Y') }}–{{ program.end_date|date('%b %Y') if program.ended else 'present' }}<br>
+                <strong>{{ program.start_date|date('%b %Y') }}–{{ program.end_date|date('%b %Y') if program.ended else 'present' }}</strong><br>
                 {{ program.city }}
             </div>
         </li>
@@ -45,7 +45,7 @@
             </div>
 
             <div class="details">
-                {{ job.start_date|date('%b %Y') }}–{{ job.end_date|date('%b %Y') if job.ended else 'present' }}<br>
+                <strong>{{ job.start_date|date('%b %Y') }}–{{ job.end_date|date('%b %Y') if job.ended else 'present' }}</strong><br>
                 {{ job.city }}
             </div>
         </li>
