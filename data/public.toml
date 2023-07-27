@@ -142,13 +142,3 @@ highlights = [
     "CLI tools",
     "Bash",
 ]
-
-[[sections]]
-title = "Core Competencies"
-
-[[sections]]
-title = "Hobbies & Interests"
-highlights = [
-    "Guitar",
-    "Hiking"
-]
