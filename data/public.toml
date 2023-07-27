@@ -21,7 +21,7 @@ url = "https://www.linkedin.com/in/tristanslater"
 
 [[education]]
 title = "Bachelor of Software Engineering (BSEng)"
-school = "University of Vectoria"
+school = "University of Victoria"
 city = "Victoria BC"
 start_date = 2016-09-07
 ended = true
@@ -86,7 +86,7 @@ ended = true
 end_date = 2013-09-01
 highlights = [
     "Developed and taught courses in web development",
-    "Taught cources in Microsoft Office and Creative Suite",
+    "Taught courses in Microsoft Office and Creative Suite",
     "Consistently received excellent feedback from students",
 ]
 
