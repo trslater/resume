@@ -27,3 +27,6 @@ def main(doc="resume"):
         data = tomllib.load(toml_file)
         
     return render_template(f"{doc}.html", title=title, **data)
+
+if __name__ == "__main__":
+    APP.run(debug=True)
