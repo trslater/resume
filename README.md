@@ -1,5 +1,11 @@
 # Tristan Slater's Resume
 
+## Usage
+
+```
+python resume.py
+```
+
 ## Adding Documents
 
 Cover letter example:
