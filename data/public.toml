@@ -5,7 +5,7 @@ email = "hello@trslater.ca"
 website = "https://trslater.ca"
 
 [profile]
-text = "I am a software engineering graduate from the University of Victoria with more than 12 years of experience in the tech industry, working on projects for large companies such as Coca-Cola and eBay, teaching technology classes at the University of Alberta, and running my own freelance web development business."
+text = "I am a software engineering graduate from the University of Victoria with more than 14 years of experience in the tech industry, working on projects for large companies such as Coca-Cola and eBay, teaching technology classes at the University of Alberta, and running my own freelance web development business."
 
 [[social]]
 network = "GitHub"
@@ -40,8 +40,8 @@ start_date = 2019-09-01
 ended = true
 end_date = 2020-12-01
 highlights = [
-    "Headed rebuild of greenhouse designer web app GUI",
-    "Headed rebuild of greenhouse designer app server in Python Django",
+    "Headed rebuild of GreenHouseDesigner web app GUI",
+    "Headed rebuild of GreenHouseDesigner app server in Python Django",
     "Developed, deployed, and managed an NGINX web server",
     "Developed a Python interface for proprietary C++ library",
 ]
@@ -58,7 +58,7 @@ highlights = [
     "Initiated several security and workflow improvements",
     "Headed rebuild of EC2 instance after attack",
     "Managed AWS EC2 instances",
-    "Initiated, defined requirements for ReactJS-based pilot project",
+    "Initiated and defined requirements for ReactJS-based pilot project",
     "Maintained WordPress website",
 ]
 
@@ -74,7 +74,7 @@ highlights = [
     "Managed client project life-cycle from conception to maintenance",
     "Constantly developed and improved development process/toolchain",
     "Learned PHP, JavaScript, and MySQL to create custom interactive content",
-    "Kept ended with relevant web technologies, frameworks, such as HTML5/CSS3 and WordPress",
+    "Kept up with relevant web technologies, frameworks, such as HTML5/CSS3/JavaScript ES5/6 and WordPress",
 ]
 
 [[experience]]
