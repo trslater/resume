@@ -20,13 +20,15 @@ def date_formatted(date, format):
 def main(doc="resume"):
     title = doc.replace("-", " ").title()
 
+    return render_template(f"{doc}.html", title=title, **data())
+
+
+def data() -> dict[str]:
     default_data_abs_path = PROJECT_PATH/DEFAULT_DATA_REL_PATH
     data_abspath = Path(os.environ.get("RESUME_DATA", default_data_abs_path))
 
     with data_abspath.open("br") as toml_file:
-        data = tomllib.load(toml_file)
-        
-    return render_template(f"{doc}.html", title=title, **data)
+        return dict(tomllib.load(toml_file))
 
 if __name__ == "__main__":
     APP.run(debug=True)
