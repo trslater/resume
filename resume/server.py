@@ -1,8 +1,13 @@
 from flask import Flask, render_template
 
+from . import config
 from .data import data
 
-APP = Flask(__name__)
+APP = Flask(
+    __name__,
+    static_folder=config.PROJECT_PATH/"static",
+    template_folder=config.PROJECT_PATH/"templates",
+)
 
 
 def start():
