@@ -1,6 +1,8 @@
 import sys
 
 from . import server
+from .data import data
+from .plaintext import plaintext
 
 try:
     fmt = sys.argv[1]
@@ -10,3 +12,6 @@ except IndexError:
 
 if fmt == "serve":
     server.start()
+
+else:
+    print(plaintext(data()))
